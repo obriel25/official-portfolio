@@ -2,7 +2,7 @@ const projects = [{
     title: "Portfolio websites",
     description:"A personal Portfolio build using react and tailwindcss",
     tech: ["React", "Tailwindcss"],
-    link:"#"
+    link:"https://github.com/obriel25/official-portfolio.git"
 },
 {
     title: "To-Do App",
