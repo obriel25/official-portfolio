@@ -1,25 +1,48 @@
-const Project = () => {
-    return(
-        <div class="bg-neutral-primary-soft block max-w-sm border border-default rounded-base shadow-xs">
-    <a href="#">
-        <img class="rounded-t-base" src="/docs/images/blog/image-1.jpg" alt="" />
-    </a>
-    <div class="p-6 text-center">
-        <span class="inline-flex items-center bg-brand-softer border border-brand-subtle text-fg-brand-strong text-xs font-medium px-1.5 py-0.5 rounded-sm">
-            <svg class="w-3 h-3 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.122 17.645a7.185 7.185 0 0 1-2.656 2.495 7.06 7.06 0 0 1-3.52.853 6.617 6.617 0 0 1-3.306-.718 6.73 6.73 0 0 1-2.54-2.266c-2.672-4.57.287-8.846.887-9.668A4.448 4.448 0 0 0 8.07 6.31 4.49 4.49 0 0 0 7.997 4c1.284.965 6.43 3.258 5.525 10.631 1.496-1.136 2.7-3.046 2.846-6.216 1.43 1.061 3.985 5.462 1.754 9.23Z"/></svg>
-            Trending
-        </span>
-        <a href="#">
-            <h5 class="mt-3 mb-6 text-2xl font-semibold tracking-tight text-heading">Streamlining your design process today.</h5>
-        </a>
-        <a href="#" class="inline-flex items-center text-white bg-brand box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none">
-            Read more
-            <svg class="w-4 h-4 ms-1.5 rtl:rotate-180 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/></svg>
-        </a>
-    </div>
-</div>
-    )
+const projects = [{
+    title: "Portfolio websites",
+    description:"A personal Portfolio build using react and tailwindcss",
+    tech: ["React", "Tailwindcss"],
+    link:"#"
+},
+{
+    title: "To-Do App",
+    description:"A simple task manager app where you can add and delete tasks.",
+    tech: ["HTML","CSS","JavaScript"],
+    link:"#"
+},
+{
+    title: "Weather App",
+    description:"Shows live weather data for any city using an API.",
+    tech: ["React","API"],
+    link:"#"
+}]
 
+
+const Project = () => {
+   return(
+    <section id="projects" className="min-h-screen px-8 py-20 bg-gray-950 text-white">
+        <h2 className="text-4xl font-bold text-center mb-12">
+            My<span className="text-blue-400">Projects</span>
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {projects.map((project,index)=>(
+                <div key={index} className="bg-gray-800 rounded-2xl p-6 flex flex-col gap-4 hover:scale-105 transition duration-300">
+                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                        {project.tech.map((item,i)=> (
+                            <span key={i} className="bg-blue-500 text-white text-xs px-3 py-1 rounded-full">
+                                {item}
+                            </span>
+                        ))}
+                    </div>
+                    <a href={project.link} className="mt-auto text-blue-400 hover:text-blue-300 text-sm font-semibold"> view Project →</a>
+
+                </div>
+            ))}
+        </div>
+    </section>
+   )
 }
 
 export default Project;

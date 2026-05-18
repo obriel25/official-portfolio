@@ -2,11 +2,11 @@ import photo from "../assets/aboutpic.png"
 
 const About = () => {
     return(
-        <section id="about" className="min-h-screen flex flex-col md:flex-row justify-center items-center  gap-12 px-8 py-20 bg-gray-900 text-white">
+        <section id="about" className="min-h-screen flex  flex-row justify-center items-center  gap-12 px-8 py-20 bg-gray-900 text-white">
            
             <div className="max-w-lg">
                  <h1 className="text-4xl font-bold mb-4">About <span className="text-blue-400">Me</span></h1>
-                <img src={photo} alt="Jefferson obriel" className="w-48 h-48 mb-2 rounded-full object-cover border-4 border-blue-400" />
+                <img src={photo} alt="Jefferson obriel" className="w-48 h-48 mb-2 rounded-full object-cover border-4 border-blue-400 shrink-0 " />
            <div>
              <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 I am a student and aspiring web developer currently learning HTML, CSS, JavaScript, React, and Tailwind CSS. 
