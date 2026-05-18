@@ -20,9 +20,9 @@ const projects = [{
 
 const Project = () => {
    return(
-    <section id="projects" className="min-h-screen px-8 py-20 bg-gray-950 text-white">
+    <section id="project" className="min-h-screen px-8 py-20 bg-gray-950 text-white">
         <h2 className="text-4xl font-bold text-center mb-12">
-            My<span className="text-blue-400">Projects</span>
+            My<span className="text-blue-400"> Projects</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project,index)=>(
