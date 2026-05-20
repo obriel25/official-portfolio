@@ -28,7 +28,7 @@ const Contact = () => {
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // stops page from going white
+    e.preventDefault(); 
 
     const form = e.target;
     const data = new FormData(form);
@@ -57,7 +57,7 @@ const Contact = () => {
         I am currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
       </p>
 
-      {/* Contact Cards */}
+     
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
         {contacts.map((contact, index) => (
             <a  key={index}
@@ -107,7 +107,7 @@ const Contact = () => {
           Send Message
         </button>
 
-        {/* Feedback messages */}
+       
         {status === "success" && (
           <p className="text-green-400 text-center font-semibold">
              Message sent successfully!

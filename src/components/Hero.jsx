@@ -2,7 +2,7 @@ import photo from "../assets/photo.png"
 import mycv from "../assets/mycv.pdf"
 const Hero = () => {
     return(
-        <section className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-950 text-white px-6 mt-16">
+        <section  className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-950 text-white px-6 mt-16">
             <img src={photo} alt="profilephoto" className="w-40 h-40 rounded-full object-cover mb-6 border-4 border-blue-400" />
             <h1 className="text-5xl font-bold mb-4">Hi,I'm Jefferson Obriel.</h1>
             <p className="text-lg text-gray-400 mb-8 max-w-xl">I'm a beginner web developer who love building things.</p>

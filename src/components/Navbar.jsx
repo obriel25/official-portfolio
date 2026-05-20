@@ -1,7 +1,7 @@
 const Navbar = () => {
  return(
-    <nav  className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-gray-900 text-white">
-        <h1 className="text-xl font-bold">JO</h1>
+    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-4 bg-gray-900 text-white">
+        <h1 id="hero" className="text-xl font-bold"><a href="">JO</a></h1>
         <ul className="flex gap-6">
             <li><a href="#about" className="hover:text-blue-400">About</a></li>
             <li><a href="#project"className="hover:text-blue-400">Project</a></li>
