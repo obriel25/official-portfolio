@@ -1,21 +1,25 @@
+import portfolioImg from '../assets/portfolio.jpg';
+import todoImg from '../assets/to-do.jpg';
+import weatherImg from '../assets/weather.jpg';
+
 const projects = [{
     title: "Portfolio websites",
     description:"A personal Portfolio build using react and tailwindcss",
-    image:"/src/assets/portfolio.jpg",
+    image: portfolioImg,
     tech: ["React", "Tailwindcss"],
     link:"https://github.com/obriel25/official-portfolio.git"
 },
 {
     title: "To-Do App",
     description:"A simple task manager app where you can add and delete tasks.",
-    image:"/src/assets/to-do.jpg",
+    image:todoImg,
     tech: ["HTML","CSS","JavaScript"],
     link:"#"
 },
 {
     title: "Weather App",
     description:"Shows live weather data for any city using an API.",
-    image:"/src/assets/weather.jpg",
+    image:weatherImg,
     tech: ["React","API"],
     link:"#"
 }]
