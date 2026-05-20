@@ -1,18 +1,21 @@
 const projects = [{
     title: "Portfolio websites",
     description:"A personal Portfolio build using react and tailwindcss",
+    image:"/src/assets/portfolio.jpg",
     tech: ["React", "Tailwindcss"],
     link:"https://github.com/obriel25/official-portfolio.git"
 },
 {
     title: "To-Do App",
     description:"A simple task manager app where you can add and delete tasks.",
+    image:"/src/assets/to-do.jpg",
     tech: ["HTML","CSS","JavaScript"],
     link:"#"
 },
 {
     title: "Weather App",
     description:"Shows live weather data for any city using an API.",
+    image:"/src/assets/weather.jpg",
     tech: ["React","API"],
     link:"#"
 }]
@@ -27,6 +30,11 @@ const Project = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {projects.map((project,index)=>(
                 <div key={index} className="bg-gray-800 rounded-2xl p-6 flex flex-col gap-4 hover:scale-105 transition duration-300">
+                     <img
+                       src={project.image}
+                       alt={project.title}
+                       className="w-full h-48 object-cover"
+                      />
                     <h3 className="text-xl font-bold text-white">{project.title}</h3>
                     <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
