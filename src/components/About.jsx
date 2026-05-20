@@ -4,9 +4,9 @@ const About = () => {
     return(
         <section id="about" className="min-h-screen flex  flex-row justify-center items-center  gap-12 px-8 py-20 bg-gray-900 text-white">
            
-            <div className="max-w-lg">
-                 <h1 className="text-4xl font-bold mb-4">About <span className="text-blue-400">Me</span></h1>
-                <img src={photo} alt="Jefferson obriel" className="w-48 h-48 mb-2 rounded-full object-cover border-4 border-blue-400 shrink-0 " />
+            <div className="max-w-lg flex flex-col items-center md:w-1/3 ">
+                 <h1 className="text-4xl font-bold mb-4">About <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">Me</span></h1>
+                <img src={photo} alt="Jefferson obriel" className="w-40 h-40 rounded-full object-cover border-4 border-blue-400 shadow-[0_0_30px_rgba(59,130,246,0.6)] hover:scale-105 transition duration-300" />
            <div>
              <p className="text-gray-400 text-lg leading-relaxed mb-6">
                 I am a student and aspiring web developer currently learning HTML, CSS, JavaScript, React, and Tailwind CSS. 
