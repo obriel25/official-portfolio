@@ -1,5 +1,5 @@
 import photo from "../assets/photo.png"
-import mycv from "public/mycv.pdf"
+import mycv from "../assets/mycv.pdf"
 const Hero = () => {
     return(
         <section  className="min-h-screen flex flex-col justify-center items-center text-center bg-gray-950 text-white px-6 mt-16">
